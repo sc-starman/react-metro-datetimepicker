@@ -1,0 +1,101 @@
+.metro-container, .metro-panel{
+    display: flex;
+    width: 200px;
+    border: solid 2px #707070;
+    color:white;
+    background: black;
+    justify-content: space-evenly;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0 1px;
+}
+
+.metro-panel{
+    flex-direction: column;
+    background: #2B2B2B;
+    margin: 2px 0;
+    position: fixed;
+    color: #AAAAAA;
+}
+
+.metro-selector-icons, .metro-panel-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.metro-panel-icons{
+    display: flex;
+    border-top: solid 2px #737373;
+}
+
+.metro-selector{
+    max-height: 200px;
+    overflow: auto;
+}
+
+.metro-part, .metro-selector{
+    flex: 1 1 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.metro-selector-item{
+    padding: 10px 0;
+    display: block;
+}
+
+.metro-selector-item:hover{
+    background: #404040;
+    color: #fff;
+}
+
+.metro-selector-item:active{
+    background: #555555;
+    color: #fff;
+}
+
+
+.metro-part:nth-child(even), .metro-selector:nth-child(even){
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+}
+
+.metro-icon-container{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.metro-icon{
+    fill: white;
+    width: 100%;
+    height: 20px;
+}
+
+.metro-icon-container:hover{
+    background: #19496F;
+}
+
+
+
+
+.metro-selector::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #AAAAAA;
+}
+
+.metro-selector::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: #AAAAAA;
+}
+
+.metro-selector:hover::-webkit-scrollbar
+{
+	width: 6px;
+}
+
+
+.metro-selector::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
